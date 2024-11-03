@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Cálculos Geométricos</string>
+    <string name="nome_aluno">Matheus Augusto Marti</string>
+    <string name="ra_aluno">RA: 1110482313017</string>
+    <string name="retangulo">Retângulo</string>
+    <string name="circulo">Círculo</string>
+    <string name="base">Base</string>
+    <string name="altura">Altura</string>
+    <string name="raio">Raio</string>
+    <string name="calc_area">Calcular Área</string>
+    <string name="calc_perimetro">Calcular Perímetro</string>
+    <string name="resultado">Resultado: </string>
+</resources>

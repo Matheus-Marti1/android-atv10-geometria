@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/circLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CirculoFragment">
+
+    <EditText
+        android:id="@+id/etRaio"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="@string/raio"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/cinza_hint"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcularAreaCirculo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalcularAreaCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/calc_area"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcularPerimetroCirculo"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcularPerimetroCirculo"
+        app:layout_constraintTop_toBottomOf="@+id/etRaio" />
+
+    <Button
+        android:id="@+id/btnCalcularPerimetroCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69dp"
+        android:text="@string/calc_perimetro"
+        app:layout_constraintBottom_toTopOf="@+id/tvResCirculo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularAreaCirculo" />
+
+    <TextView
+        android:id="@+id/tvResCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularPerimetroCirculo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

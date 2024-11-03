@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/retLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetanguloFragment">
+
+    <EditText
+        android:id="@+id/etBase"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="@string/base"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/cinza_hint"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/etAltura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:hint="@string/altura"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/cinza_hint"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcularAreaRet"
+        app:layout_constraintStart_toStartOf="@+id/etBase"
+        app:layout_constraintTop_toBottomOf="@+id/etBase" />
+
+    <Button
+        android:id="@+id/btnCalcularAreaRet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/calc_area"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcularPerimetroRet"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcularPerimetroRet"
+        app:layout_constraintTop_toBottomOf="@+id/etAltura" />
+
+    <Button
+        android:id="@+id/btnCalcularPerimetroRet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:text="@string/calc_perimetro"
+        app:layout_constraintBottom_toTopOf="@+id/tvResRet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularAreaRet" />
+
+    <TextView
+        android:id="@+id/tvResRet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="191dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularPerimetroRet" />
+</androidx.constraintlayout.widget.ConstraintLayout>
